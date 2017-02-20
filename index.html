@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Math</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+</head>
+
+<body>
+
+        <header>
+
+          <div class="left">
+
+            <div class="inner_left" id="title_app">
+
+              <h1 id="title" class="animate">Mathematic Application</h1>
+              <h3 class="texte animate">{{ message }}</h3>
+              <h3 class="texte animate">{{ message2 }}</h3>
+
+            </div>
+
+          </div>
+
+          <div class="start">
+
+            <h2 class="animate">SCROLL DOWN TO START!</h2>
+
+          </div>
+
+        </header>
+
+        <div id="container1" class="container">
+
+          <div class="left">
+            <div class="inner_left">
+
+            <h1>Addition</h1>
+
+            <div class="texte">
+
+                <p>{{ number_1 }} + {{ number_2 }} = ?</p>
+                <input type="number" v-model="user_answer" v-on:keyup.enter="calculate">
+                <button type="button" v-on:click="calculate">Calculate</button>
+                <button type="button" v-on:click="restart">Restart</button>
+
+            </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div id="container2" class="container">
+
+          <div class="left">
+            <div class="inner_left">
+
+            <h1>Soustraction</h1>
+
+            <div class="texte">
+
+                <p>{{ number_1 }} - {{ number_2 }} = ?</p>
+                <input type="number" v-model="user_answer" v-on:keyup.enter="calculate">
+                <button type="button" v-on:click="calculate">Calculate</button>
+                <button type="button" v-on:click="restart">Restart</button>
+
+            </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+    <!-- <script src="vue.js"></script> -->
+    <script src="jquery.slim.js" charset="utf-8"></script>
+    <script src="vue.min.js" charset="utf-8"></script>
+    <!-- <script src="https://unpkg.com/vue/dist/vue.js"></script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
